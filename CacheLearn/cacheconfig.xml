@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<SQLCommands>
+  
+  <!--所有的用户缓存-->
+  <SQLCommand ListType="UserInfo" CommandString="SELECT * FROM UserInfo" CacheOverTime="0,5,0"></SQLCommand>
+  
+  <!--未处理的订单缓存-->
+  <SQLCommand ListType="UnHandleOrder" CommandString="SELECT * FROM OrderInfo WHERE Orderstatus = 0" CacheOverTime="0,5,0"></SQLCommand>
+
+</SQLCommands>
